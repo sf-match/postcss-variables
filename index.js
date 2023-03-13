@@ -65,7 +65,7 @@ module.exports = postcss.plugin('postcss-variables', (opts = {}) => {
 				value = getVariable(node, prop);
 
 			if (value === undefined) {
-				node.warn(result, 'Undefined variable $' + prop);
+				// node.warn(result, 'Undefined variable $' + prop);
 
 				return match;
 			}
